@@ -1,10 +1,10 @@
 body{
-    background-color: aqua;
+    /* background-color: aqua; */
     font-family: Helvetica Neue Regular;
 }
 
 .main{
-    background-color: beige;
+    /* background-color: beige; */
     width: calc(20%);
     margin: 0 auto;
     margin-top: 120px;
@@ -59,7 +59,7 @@ a:active{
 }
 
 .links{
-    background-color: rgb(255, 193, 148);
+    /* background-color: rgb(255, 193, 148); */
     font-size: 20pt;
     /* width: calc(75%);
     margin-left: auto;
