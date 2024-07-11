@@ -1,7 +1,10 @@
 .header{
     background-color: rgb(255, 89, 0);
-    height: 15%;
+    height: 40px;
     width: 100%;
+    position: sticky;
+    top: 0;
+    /* border-bottom: 2px solid #ff0000; */
 }
 
 .body{
@@ -9,28 +12,104 @@
 
 }
 
-.container{
+#main{
     background-color: aquamarine;
-    width: 100%;
-    height: 70%;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-
+    border-top: 2px solid #ff0000;
 }
 
-.info{
+#info{
     background-color: antiquewhite;
-    height: 630px;
-    width: 30%;
+    width: 20%;
+    height: 360px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
 }
 
-.proyecto{
-    background-color: blue;
-    width: 60%;
-    height: 630px;
+#proyecto{
+    background-color: rgb(130, 130, 235);
+    width: 80%;
+    /* padding: 20px; */
+    border-left: 2px solid #b4b4b4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.parent{
+img{
+    background-color: #ad6a6a;
+}
+
+/* imagen cd */
+
+.imagen-container {
+    display: inline-block;
+    position: relative;
+    width: 1154px;
+    height: 564px;
+    margin-left: 5px;
+  }
+  
+  .imagen-container img {
+    display: block;
     width: 100%;
-}
+    height: 100%;
+  }
+  
+  .imagen-container .imagen1 {
+    display: block;
+  }
+  
+  .imagen-container .imagen2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .imagen-container:hover .imagen1 {
+    display: none;
+  }
+  
+  .imagen-container:hover .imagen2 {
+    display: block;
+  }
+
+  .fotos2{
+    margin-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #peque{
+    margin: 5px;
+    margin-bottom: 250px;
+  }
+
+  .pg1{
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 500px
+  }
+
+  .pg2{
+    position: relative;
+    margin-top: -250px;
+    margin-right: 15px;
+    margin-left: 50px
+  }
+
+
+
+
+
+  footer{
+    width: 100%;
+    height: 50px;
+    border-top: 2px solid #ff0000;
+  }
