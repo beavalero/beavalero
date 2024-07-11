@@ -1,15 +1,70 @@
-.header{
-    background-color: rgb(255, 89, 0);
-    height: 40px;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    /* border-bottom: 2px solid #ff0000; */
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue Regular;
 }
 
-.body{
-    width: 100%;
+/* HEADER */
+header{
+    background-color: white;
+    height: 40px;
+    padding: 0 50px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 2px solid #ff0000;
+}
 
+#home{
+  text-transform: uppercase;
+  color: #ff0000;
+  font-size: 14pt;
+  text-decoration: none;
+}
+
+#home:hover{
+  text-decoration: line-through;
+}
+
+.menu a{
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu{
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+
+.mostrar-menu{
+  order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+  color: red;
+}
+
+#check{
+  display: none;
+}
+
+
+/* MAIN */
+
+body{
+    width: 100%;
 }
 
 #main{
@@ -19,7 +74,6 @@
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    border-top: 2px solid #ff0000;
 }
 
 #info{
@@ -29,6 +83,8 @@
     padding: 20px;
     position: sticky;
     top: 0;
+    top: 40px; /* Altura del header fijo */
+    z-index: 900; /* Asegura que el div sticky esté por debajo del header */
 }
 
 #proyecto{
@@ -39,6 +95,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* LÍNEA ROJA */
+.linea-roja {
+  width: 100%;
+  height: 1px; /* Grosor de la línea */
+  background-color: red; /* Color de la línea */
+  margin: 0; /* Ajusta los márgenes si es necesario */
 }
 
 img{
@@ -113,3 +177,50 @@ img{
     height: 50px;
     border-top: 2px solid #ff0000;
   }
+
+
+  /* RESPONSIVE */
+@media(max-width:768px){
+  /* HEADER */
+  .mostrar-menu,
+  .esconder-menu{
+    display: block;
+  }
+
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.5s;
+  }
+
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+
+  .esconder-menu{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  #check:checked ~ .menu{
+    right: 0;
+  }
+  /* MAIN */
+  #proyecto img{
+    width: 90vh;
+    height: 50vh;
+  }
+
+  .linea-roja{
+    height: 2px;
+  }
+}
