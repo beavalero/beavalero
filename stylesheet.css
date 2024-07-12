@@ -291,7 +291,7 @@ a:active{
     }
 
     .main-image{
-        width: calc(60%);
+        width: calc(75%);
     }
 
     #nombre{
@@ -306,30 +306,34 @@ a:active{
         margin: calc(10%);;
     }
 
+    p.texto{
+        font-size: 9pt;
+    }
+
     #links{
         position: relative;
     }
 
     #links a{
-        font-size: 23px;
+        font-size: 20px;
     }
 
     #music{
         position: absolute;
         top: 140px;
-        left: 150px;
+        left: 160px;
     }
 
     #design{
         position: absolute;
         top: 100px;
-        left: 20px;
+        left: 0px;
     }
 
     #ilu{
         position: absolute;
         top: 60px;
-        left: 280px;
+        left: 260px;
     }
 
     .linea-roja1{
@@ -337,7 +341,7 @@ a:active{
         transform: rotate(135deg);
         position: absolute;
         top: 50px;
-        left: 50px;
+        left: 30px;
     }
 
     .linea-roja2{
@@ -345,7 +349,7 @@ a:active{
         transform: rotate(82deg);
         position: absolute;
         top: 73px;
-        left: 120px;
+        left: 100px;
     }
 
     .linea-roja3{
@@ -353,6 +357,6 @@ a:active{
         transform: rotate(14deg);
         position: absolute;
         top: 30px;
-        left: 220px;
+        left: 180px;
     }
 }
