@@ -5,11 +5,12 @@
     font-family: Helvetica Neue Regular;
 }
 
-.main{
-    /* background-color: beige; */
-    width: calc(20%);
+main{
+    /* background-color: rgb(255, 255, 0); */
+    width: calc(80%);
+    height: calc(100%);
     margin: 0 auto;
-    margin-top: 95px;
+    margin-top: 70px;
     text-align: center;
 }
 
@@ -17,24 +18,53 @@
     width: 300px;
     border: solid 3px red
 }
-#adjetivos{
-    position: fixed;
+
+p{
+    margin: calc(32%);;
+}
+
+#nombre{
+    font-family: Helvetica Neue Thin Italic;
+    font-size: 20pt;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    transform: scaleY(3);
+}
+
+#nombre:hover{
+    color: red;
+}
+
+.flecha{
+    width: 30px;
+    height: 20px;
+}
+
+p.texto{
+    margin-top: 3px;
+    margin-bottom: 1px;
+    text-align: justify;
+    font-size: 11pt;
+}
+
+#bloque2{
+    position: absolute;
     /* background-color: aqua; */
     width: 320px;
     height: 320px;
-    top: 90px;
-    left: 610px;
-    opacity: 30%;
+    /* top: 80px;
+    left: 610px; */
+    opacity: 20%;
     margin: 0;
     padding: 0;
     font-size: 15pt;
 }
 
-#adjetivos:hover{
+#bloque2:hover{
     opacity: 100%;
 }
 
-#adjetivos img{
+#bloque2 img{
     margin-left: -30px;
     margin-top: -20px;
     z-index: 1000;
@@ -74,21 +104,6 @@
     top: -266px; 
 }
 
-#nombre{
-    font-family: Helvetica Neue Thin Italic;
-    font-size: 20pt;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    transform: scaleY(3);
-}
-
-p.texto{
-    margin-top: 3px;
-    margin-bottom: 1px;
-    text-align: justify;
-    font-size: 11pt;
-}
-
 /* links!! */
 
 
@@ -112,62 +127,62 @@ a:active{
     text-decoration: line-through;
 }
 
-.links{
-    /* background-color: rgb(255, 193, 148); */
-    font-size: 20pt;
-    /* width: calc(75%);
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center; */
+#links{
+    /* border: 5px solid gold; */
+    width: auto ;
+    /* position: absolute; */
 }
 
 /* LÍNEAS */
 .linea-roja1 {
-    width: 250px;
+    width: 270px;
     height: 2px;
     background-color: red;
-    transform: rotate(-12deg);
-    position: relative;
-    left: 330px;
-    top: -150px;
+    transform: rotate(-11deg);
+    position: absolute;
+    top: 340px;
+    left: 310px;
 }
 
 .linea-roja2 {
-    width: 250px;
+    width: 200px;
     height: 2px;
     background-color: red;
-    transform: rotate(-30deg);
-    position: relative;
-    left: 930px;
-    top: -380px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 140px;
+    left: 910px;
 }
 
 .linea-roja3 {
     width: 270px;
     height: 2px;
     background-color: red;
-    transform: rotate(7deg);
-    position: relative;
+    transform: rotate(12deg);
+    position: absolute;
+    top: 580px;
     left: 800px;
-    top: -25px;
-}
-
-#music{
-    position: relative;
-    left: 1170px;
-    top: -480px;
 }
 
 #design{
-    position: relative;
-    left: 229px;
-    top: -136px;
+    font-size: 20pt;
+    position: absolute;
+    top: 350px;
+    left: 200px;
+}
+
+#music{
+    font-size: 20pt;
+    position: absolute;
+    top: 40px;
+    left: 1100px;
 }
 
 #ilu{
-    position: relative;
+    font-size: 20pt;
+    position: absolute;
+    top: 580px;
     left: 1100px;
-    top: -50px;
 }
 
 /* fonts!! */
@@ -189,7 +204,78 @@ a:active{
 
 /* RESPONSIVE */
 @media(max-width:768px){
-     /* MAIN */
+    .main{
+        margin-top: 30px;
+    }
+    .bloque{
+        width: 300px;
+        height: 100px;
+        position: relative;
+    }
 
-    
-  }
+    .main-image{
+        width: calc(60%);
+    }
+
+    #nombre{
+        font-size: 16pt;
+    }
+    .flecha{
+        width: 20px;
+        height: 15px;
+    }
+
+    p{
+        margin: calc(10%);;
+    }
+
+    #links{
+        position: relative;
+    }
+
+    #links a{
+        font-size: 23px;
+    }
+
+    #music{
+        position: absolute;
+        top: 140px;
+        left: 150px;
+    }
+
+    #design{
+        position: absolute;
+        top: 100px;
+        left: 20px;
+    }
+
+    #ilu{
+        position: absolute;
+        top: 60px;
+        left: 280px;
+    }
+
+    .linea-roja1{
+        width: 120px;
+        transform: rotate(135deg);
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    .linea-roja2{
+        width: 120px;
+        transform: rotate(82deg);
+        position: absolute;
+        top: 73px;
+        left: 120px;
+    }
+
+    .linea-roja3{
+        width: 140px;
+        transform: rotate(14deg);
+        position: absolute;
+        top: 30px;
+        left: 220px;
+    }
+}
