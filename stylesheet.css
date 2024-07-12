@@ -6,7 +6,7 @@
 }
 
 main{
-    /* background-color: rgb(255, 255, 0); */
+    background-color: rgb(255, 255, 0);
     width: calc(80%);
     height: calc(100%);
     margin: 0 auto;
@@ -204,6 +204,83 @@ a:active{
 
 /* RESPONSIVE */
 @media(max-width:768px){
+    .main{
+        margin-top: 30px;
+    }
+    .bloque{
+        width: 300px;
+        height: 100px;
+        position: relative;
+    }
+
+    .main-image{
+        width: calc(60%);
+    }
+
+    #nombre{
+        font-size: 16pt;
+    }
+    .flecha{
+        width: 20px;
+        height: 15px;
+    }
+
+    p{
+        margin: calc(10%);;
+    }
+
+    #links{
+        position: relative;
+    }
+
+    #links a{
+        font-size: 23px;
+    }
+
+    #music{
+        position: absolute;
+        top: 140px;
+        left: 150px;
+    }
+
+    #design{
+        position: absolute;
+        top: 100px;
+        left: 20px;
+    }
+
+    #ilu{
+        position: absolute;
+        top: 60px;
+        left: 280px;
+    }
+
+    .linea-roja1{
+        width: 120px;
+        transform: rotate(135deg);
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+
+    .linea-roja2{
+        width: 120px;
+        transform: rotate(82deg);
+        position: absolute;
+        top: 73px;
+        left: 120px;
+    }
+
+    .linea-roja3{
+        width: 140px;
+        transform: rotate(14deg);
+        position: absolute;
+        top: 30px;
+        left: 220px;
+    }
+}
+
+@media(max-width:425px){
     .main{
         margin-top: 30px;
     }
