@@ -9,7 +9,7 @@
 header{
     background-color: white;
     height: 40px;
-    padding: 0 50px;
+    padding: 0 90px;
     position: sticky;
     top: 0;
     display: flex;
@@ -68,8 +68,10 @@ body{
 }
 
 #main{
-    background-color: aquamarine;
-    width: auto;
+    /* background-color: aquamarine; */
+    width: 90%; /* El contenedor ocupa el 90% del ancho del viewport */
+    max-width: 1500px; /* Ancho máximo del contenedor */
+    margin: 0 auto;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -77,9 +79,9 @@ body{
 }
 
 #info{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     width: 20%;
-    height: 360px;
+    height: 60%;
     padding: 20px;
     position: sticky;
     top: 0;
@@ -87,8 +89,15 @@ body{
     z-index: 900; /* Asegura que el div sticky esté por debajo del header */
 }
 
+p{
+  margin-top: 10pt;
+  margin-right: 10%;
+  margin-bottom: 10pt;
+  text-align: justify;
+}
+
 #proyecto{
-    background-color: rgb(130, 130, 235);
+    /* background-color: rgb(130, 130, 235); */
     width: 80%;
     /* padding: 20px; */
     border-left: 2px solid #b4b4b4;
@@ -97,80 +106,55 @@ body{
     justify-content: center;
 }
 
+#proyecto2{
+  background-color: rgb(44, 44, 44);
+  width: 80%;
+  /* padding: 20px; */
+  border-left: 2px solid #b4b4b4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#proyecto img{
+  display: block;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.images-peque{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.images-peque2{
+  margin-top: -10%;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.pg{
+  margin-left: 45%;
+  margin-top: -25%;
+}
+
 /* LÍNEA ROJA */
 .linea-roja {
   width: 100%;
-  height: 1px; /* Grosor de la línea */
+  height: 2px; /* Grosor de la línea */
   background-color: red; /* Color de la línea */
-  margin: 0; /* Ajusta los márgenes si es necesario */
+  margin: 0 auto; /* Ajusta los márgenes si es necesario */
 }
 
 img{
-    background-color: #ad6a6a;
+  /* background-color: #ad6a6a; */
+  max-width: 100%; /* Asegura que las imágenes no se desborden */
+  height: auto; /* Ajusta automáticamente la altura */
 }
-
-/* imagen cd */
-
-.imagen-container {
-    display: inline-block;
-    position: relative;
-    width: 1154px;
-    height: 564px;
-    margin-left: 5px;
-  }
-  
-  .imagen-container img {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .imagen-container .imagen1 {
-    display: block;
-  }
-  
-  .imagen-container .imagen2 {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .imagen-container:hover .imagen1 {
-    display: none;
-  }
-  
-  .imagen-container:hover .imagen2 {
-    display: block;
-  }
-
-  .fotos2{
-    margin-left: 30px;
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  #peque{
-    margin: 5px;
-    margin-bottom: 250px;
-  }
-
-  .pg1{
-    position: relative;
-    margin-bottom: 20px;
-    margin-left: 500px
-  }
-
-  .pg2{
-    position: relative;
-    margin-top: -250px;
-    margin-right: 15px;
-    margin-left: 50px
-  }
-
-
-
-
 
   footer{
     width: 100%;
@@ -180,7 +164,37 @@ img{
 
 
   /* RESPONSIVE */
-@media(max-width:768px){
+
+@media (max-width: 768px) {
+  #main {
+    flex-direction: column; /* Cambia a column para versiones móviles */
+  }
+
+  #info, #proyecto {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 20px; /* Espacio entre las secciones */
+    position: relative;
+  }
+
+  #main img{
+    width: 100%;
+    height: auto;
+  }
+
+  #info img{
+    width: 10%;
+  }
+
+  .images-peque{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+}
+
+@media(max-width:475px){
   /* HEADER */
   .mostrar-menu,
   .esconder-menu{
@@ -216,11 +230,55 @@ img{
   }
   /* MAIN */
   #proyecto img{
-    width: 90vh;
-    height: 50vh;
+    max-width: 100%; /* Asegura que las imágenes no se desborden */
+    height: auto; /* Ajusta automáticamente la altura */
+  }
+
+  #info, #proyecto {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 20px; /* Espacio entre las secciones */
+    position: relative;
+  }
+
+  #proyecto2{
+    background-color: white;
+  }
+
+  #info{
+    font-size: 80%;
+  }
+
+  #info img{
+    width: 10%;
+  }
+
+  #poster_anim{
+    width: 80%;
+  }
+
+  .images-peque{
+    width: 29%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .images-peque2{
+    margin-top: 0%;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .pg{
+    margin-left: 0px;
+    margin-top: 0%;
   }
 
   .linea-roja{
     height: 2px;
   }
 }
+

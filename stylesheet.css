@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: Helvetica Neue Regular;
+    cursor: url(images/circle-cursor.png), auto;
 }
 
 main{
@@ -17,6 +18,10 @@ main{
 .main-image{
     width: 300px;
     border: solid 3px red
+}
+
+.main-image:hover{
+    cursor: url(images/circle-cursor-hover.png), auto;
 }
 
 p{
@@ -36,12 +41,12 @@ p{
 }
 
 .flecha{
-    width: 30px;
-    height: 20px;
+    width: 2%;
+    height: 1%;
 }
 
 p.texto{
-    margin-top: 3px;
+    margin-top: 4%;
     margin-bottom: 1px;
     text-align: justify;
     font-size: 11pt;
@@ -109,6 +114,7 @@ p.texto{
 
 a{
     text-decoration: none;
+    cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
 }
 
 a:link{
@@ -280,7 +286,7 @@ a:active{
     }
 }
 
-@media(max-width:425px){
+@media(max-width:475px){
     .main{
         margin-top: 30px;
     }
