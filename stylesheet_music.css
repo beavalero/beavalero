@@ -187,15 +187,7 @@ img{
 
   /* RESPONSIVE */
 
-@media (max-width: 768px) {
-  
-
-  
-
-
-}
-
-@media(max-width:768px){
+@media(max-width:828px){
   /* HEADER */
   .mostrar-menu,
   .esconder-menu{
