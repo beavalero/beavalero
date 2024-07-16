@@ -89,6 +89,10 @@ body{
     z-index: 900; /* Asegura que el div sticky esté por debajo del header */
 }
 
+h2{
+  font-family: Helvetica Neue Italic;  
+}
+
 p{
   margin-top: 10pt;
   margin-right: 10%;
@@ -163,38 +167,35 @@ img{
   }
 
 
+/* fonts!! */
+
+@font-face {
+  font-family: Helvetica Neue Regular;
+  src: url(fonts/HelveticaNeueRoman.otf);
+}
+
+@font-face {
+  font-family: Helvetica Neue Italic;
+  src: url(fonts/HelveticaNeueItalic.ttf);
+}
+
+@font-face {
+  font-family: Helvetica Neue Thin Italic;
+  src: url(fonts/HelveticaNeueThinItalic.otf);
+}
+
+
   /* RESPONSIVE */
 
 @media (max-width: 768px) {
-  #main {
-    flex-direction: column; /* Cambia a column para versiones móviles */
-  }
+  
 
-  #info, #proyecto {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    margin-bottom: 20px; /* Espacio entre las secciones */
-    position: relative;
-  }
+  
 
-  #main img{
-    width: 100%;
-    height: auto;
-  }
 
-  #info img{
-    width: 10%;
-  }
-
-  .images-peque{
-    width: 25%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-  }
 }
 
-@media(max-width:475px){
+@media(max-width:768px){
   /* HEADER */
   .mostrar-menu,
   .esconder-menu{
@@ -229,23 +230,36 @@ img{
     right: 0;
   }
   /* MAIN */
-  #proyecto img{
-    max-width: 100%; /* Asegura que las imágenes no se desborden */
-    height: auto; /* Ajusta automáticamente la altura */
+
+  #main {
+    flex-direction: column; /* Cambia a column para versiones móviles */
   }
 
   #info, #proyecto {
     width: 100%; /* Ocupa todo el ancho disponible */
     margin-bottom: 20px; /* Espacio entre las secciones */
     position: relative;
+    border-left: 0px solid #ffffff;
   }
 
   #proyecto2{
-    background-color: white;
+    border-left: 0px solid #ffffff;
+    background-color: #ffffff;
+  }
+
+  #main img{
+    width: 100%;
+    height: auto;
+  }
+
+  #proyecto img{
+    max-width: 100%; /* Asegura que las imágenes no se desborden */
+    height: auto; /* Ajusta automáticamente la altura */
   }
 
   #info{
     font-size: 80%;
+    margin-top: -8%;
   }
 
   #info img{
