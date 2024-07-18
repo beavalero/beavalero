@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
   font-family: Helvetica Neue Regular;
+  cursor: url(images/circle-cursor.png), auto;
 }
+
 
 /* HEADER */
 header{
@@ -41,7 +43,7 @@ header{
 .mostrar-menu,
 .esconder-menu{
   font-size: 50px;
-  cursor: pointer;
+  cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
   display: none;
   transition: 0.4s;
 }
@@ -140,6 +142,31 @@ p{
   /* margin-top: -25%; */
 }
 
+#info img:hover{
+  cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
+}
+
+a{
+  text-decoration: none;
+  cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
+}
+
+a:link{
+  color: black;
+}
+
+a:visited{
+  color: black;
+}
+
+a:hover{
+  color: red;
+}
+
+a:active{
+  text-decoration: line-through;
+}
+
 /* LÍNEA ROJA */
 .linea-roja {
   width: 100%;
@@ -192,7 +219,7 @@ html {
 }
 
 .back-to-top:hover {
-    opacity: 0.6; /* Cambia la opacidad al pasar el cursor sobre la imagen */
+   cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
 }
 
 

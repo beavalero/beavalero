@@ -30,7 +30,7 @@ p{
 
 #nombre{
     font-family: Helvetica Neue Thin Italic;
-    font-size: 20pt;
+    font-size: 25pt;
     margin-top: 20px;
     margin-bottom: 30px;
     transform: scaleY(3);
@@ -225,6 +225,7 @@ a:active{
 
     #nombre{
         font-size: 40pt;
+        margin-top: 1%;
         margin-bottom: 5%;
     }
     .flecha{
@@ -239,7 +240,6 @@ a:active{
     }
 
     #links{
-        background-color: greenyellow;
         height: 250px;
         /* margin-top: -5%; */
         position: relative;

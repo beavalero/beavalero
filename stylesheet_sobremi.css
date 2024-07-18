@@ -1,9 +1,10 @@
 /* RESET */
 *{
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica Neue Regular;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue Regular;
+  cursor: url(images/circle-cursor.png), auto;
+}
   
   /* HEADER */
   header{
