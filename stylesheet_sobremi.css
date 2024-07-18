@@ -42,7 +42,7 @@
   .mostrar-menu,
   .esconder-menu{
     font-size: 50px;
-    cursor: pointer;
+    cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
     display: none;
     transition: 0.4s;
   }
@@ -161,6 +161,27 @@ h1{
     /* background-color: #ad6a6a; */
     max-width: 110%; /* Asegura que las imágenes no se desborden */
     height: auto; /* Ajusta automáticamente la altura */
+  }
+
+  a{
+    text-decoration: none;
+    cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
+  }
+  
+  a:link{
+    color: black;
+  }
+  
+  a:visited{
+    color: black;
+  }
+  
+  a:hover{
+    color: red;
+  }
+  
+  a:active{
+    text-decoration: line-through;
   }
 
   /* LÍNEA ROJA */
