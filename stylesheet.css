@@ -242,6 +242,7 @@ a:active{
     #links{
         height: 250px;
         /* margin-top: -5%; */
+        margin-bottom: 20%;
         position: relative;
     }
 

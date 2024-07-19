@@ -92,15 +92,34 @@
       /* background-color: rgb(244, 180, 180); */
       width: 20%;
       height: 60%;
-      padding: 30px;
+      /* padding: 20px; */
+      margin-top: 3%;
+      margin-left: 3%;
       position: sticky;
       top: 0;
       top: 40px; /* Altura del header fijo */
       z-index: 900; /* Asegura que el div sticky esté por debajo del header */
   }
+
+  #sobremi{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 20%;
+  }
+
+  #infoart{
+    /* background-color: rgb(244, 180, 180); */
+    width: 20%;
+    height: 60%;
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    top: 40px; /* Altura del header fijo */
+    z-index: 900; /* Asegura que el div sticky esté por debajo del header */
+}
   
 h1{
-    margin-top: 4%;
+    /* margin-top: 4%; */
     font-size: 16pt;
 }
 
@@ -115,17 +134,25 @@ h1{
   left: 18%;
 }
 
-  p{
+.nevermet{
+  width: 30%;
+  position: absolute;
+  top: 219%;
+  left: 22%;
+  mix-blend-mode: multiply;
+}
+
+#infoart p{
     margin-top: 10pt;
     margin-right: 10%;
     margin-bottom: 10pt;
     text-align: justify;
   }
-  
-#sobremi p{
-  margin-right: 40%;
-  margin-top: 3.2%;
-}
+
+  h2{
+    font-family: Helvetica Neue Italic;
+    font-size: 15pt;
+  }
 
   #proyecto{
     background-color: rgb(255, 255, 255);
@@ -234,11 +261,44 @@ html {
     opacity: 0.6; /* Cambia la opacidad al pasar el cursor sobre la imagen */
 }
 
+/* CAMBIO IDIOMA */
+
+/* styles.css */
+[data-lang] {
+  display: none;
+}
+
+html[lang="en"] [data-lang="en"],
+html[lang="es"] [data-lang="es"] {
+  display: block;
+}
+
+.lang-btn {
+  padding: 0px 4px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: url(images/circle-cursor-hover.png), auto;
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.lang-btn.active {
+  border-bottom: 2px solid #ff0000;
+  color: #ff0000;
+}
+
+.lang-btn:hover {
+  color: #ff0000;
+}
+
   
   
   
     /* RESPONSIVE */
-  
+
   @media(max-width:1128px){
     /* HEADER */
     header{
@@ -301,7 +361,7 @@ html {
   
     #info, #proyecto {
       width: 100%; /* Ocupa todo el ancho disponible */
-      margin-bottom: 20px; /* Espacio entre las secciones */
+      margin-bottom: 10px; /* Espacio entre las secciones */
       position: relative;
       /* background-color: #ffffff; */
       border-left: 0px solid #ffffff;
@@ -310,19 +370,57 @@ html {
     #main img{
       /* width: 100%; */
       height: auto;
+      margin-left: 7%;
     }
 
     #info{
-      width: 90%;
+      padding: 20px;
+      width: 110%;
       font-size: 90%;
-      margin-top: 1%;
-      margin-left: 5%;
+      /* margin-top: 1%; */
+      margin-left: 4%;
     }
 
     #infoart{
+      width: 90%;
       font-size: 110%;
       /* margin-top: 1%; */
       margin-left: 3%;
+      position: relative;
+    }
+
+    p{
+      background-color: antiquewhite;
+      margin-top: 5pt;
+      margin-right: 10%;
+      margin-left: 7%;
+      margin-bottom: 10pt;
+      text-align: justify;
+    }
+
+    #sobremi p, h2{
+      background-color: antiquewhite;
+      margin-top: 5pt;
+      margin-right: 10%;
+      margin-left: 7%;
+      margin-bottom: 10pt;
+      text-align: justify;
+    }
+
+    #sobremi{
+      margin-top: 3%;
+      margin-left: 0;
+    }
+
+    #infoart img{
+      display: none;
+    }
+
+    #infoart p{
+      margin-right: 10%;
+      margin-left: 0;
+      margin-bottom: 30pt;
+      text-align: justify;
     }
 
     #info img{
@@ -332,17 +430,18 @@ html {
     #proyecto img{
       max-width: 90%;
       margin: 7%;
+      margin-left: 7%;
     }
 
     #dibujos{
+      border-left: 0px solid #ffffff;
+      margin-left: 5%;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
     }
 
     #dibujos div{
-      width: 80%;
-      margin-left: 7%;
+      width: 90%;
     }
 
     .infanta{
@@ -351,6 +450,14 @@ html {
       top: -10%;
       left: -10%;
       padding: 2%
+    }
+
+    .nevermet{
+      width: 40%;
+      position: absolute;
+      top: 64%;
+      left: -2%;
+      mix-blend-mode: multiply;
     }
   
     .back-to-top{

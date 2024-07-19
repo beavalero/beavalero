@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-witdhh, initial-scale-1.0">
@@ -23,6 +23,7 @@
             <a href="music.html">MUSIC</a>
             <a href="art.html">ART</a>
             <a href="https://www.instagram.com/beaerys_art/" target="_blank">IG | @beaerys_art</a>
+            <button id="btn-en" class="lang-btn active" onclick="setLanguage('en')">EN</button>|<button id="btn-es" class="lang-btn" onclick="setLanguage('es')">ES</button>
             <label for="check" class="esconder-menu">
                 &#215
             </label>
@@ -30,14 +31,23 @@
     </header>
     
     <main id="main">
-        <section id="infoart">
+        <section id="infoart" data-lang="es">
             <h1>
                 TÍTULO <span class="cursiva">1</span>
             </h1>  
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p> 
-            <img src="images/art/bea_lisa.jpg" width="50%">
+            <p>Hola guapa</p> 
+            <img src="images/art/bea_lisa.jpg" width="60%">
+        </section>
+
+        <section id="infoart" data-lang="en">
+            <h1>
+                TITLE <span class="cursiva">1</span>
+            </h1>  
+            <p>Hello darling</p> 
+            <img src="images/art/bea_lisa.jpg" width="60%">
         </section>
         <section id="proyecto">
+            <img class="nevermet" src="images/art/888.gif">
             <img src="images/art/Mesa de trabajo 1.png" width="110%" style="margin-top: 1%;">
             <img class="infanta" src="images/art/nosoyespecial.gif">
         </section>
@@ -53,11 +63,11 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p> 
         </section>
         <section id="dibujos">
-            <div>
+            <div style="margin-right: 7%;">
                 <img src="images/art/POLSGRIS FT.BEA.png">
                 <p style="margin-top: 0;">JUL 2023</p>
             </div>
-            <div style="margin-left: 7%;">
+            <div>
                 <img src="images/art/uwu 001.jpg">
                 <p style="margin-top: 0;">FEB 2021</p>
             </div>
@@ -69,11 +79,13 @@
     </a>
 
     <footer>
-        <span>NUMERO <br>beaerys@gmail.com</span>
+        <span>CONTACTO <br>beaerys@gmail.com</span>
         <span style="text-align: center;"><a href="https://www.behance.net/beavalero" target="_blank">BEHANCE</a><br><a href="https://www.instagram.com/bbb_dsign/" target="_blank">INSTAGRAM</a>
         </span>
         <span style="text-align: right;">©2024<br>BEA VALERO</span>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

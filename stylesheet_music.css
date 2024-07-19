@@ -379,6 +379,10 @@ html {
     margin-top: 0%;
   }
 
+  .imagen-responsiva {
+    content: url('images/music/poster_anim2.gif');
+  }
+
   .linea-roja {
     width: 100%;
     height: 2px; /* Grosor de la línea */
