@@ -250,6 +250,20 @@ h2, h3{
     height: auto; /* Ajusta automáticamente la altura */
   }
 
+  .animation{
+    width: 110%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .animation img{
+    margin-bottom: 2%;
+  }
+
   a{
     text-decoration: none;
     cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
@@ -421,8 +435,9 @@ html[lang="es"] [data-lang="es"] {
     }
   
     #info, #proyecto {
-      width: 100%; /* Ocupa todo el ancho disponible */
+      width: 95%; /* Ocupa todo el ancho disponible */
       margin-bottom: 10px; /* Espacio entre las secciones */
+      margin-left: 2%;
       position: relative;
       /* background-color: #ffffff; */
       border-left: 0px solid #ffffff;
@@ -497,7 +512,7 @@ html[lang="es"] [data-lang="es"] {
       width: 20%;
     }
 
-    #proyecto img{
+    #proyecto img >.animation img{
       max-width: 90%;
       margin: 7%;
       margin-left: 7%;
@@ -517,17 +532,23 @@ html[lang="es"] [data-lang="es"] {
     .infanta{
       width: 50%;
       position: absolute;
-      top: -10%;
-      left: -10%;
+      top: -3%;
+      left: -7%;
       padding: 2%
     }
 
-    .nevermet{
-      width: 40%;
-      position: absolute;
-      top: 64%;
-      left: -2%;
-      mix-blend-mode: multiply;
+    .animation{
+      /* width: 90%; */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .animation img{
+      width: 70%;
+      margin-bottom: 3%;
     }
 
     .datos{

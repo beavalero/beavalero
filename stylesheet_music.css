@@ -169,6 +169,12 @@ p{
 #cartel2{
   margin-left: 0;
 }
+
+#cartel3{
+  margin-top: -2.9%;
+  margin-left: -2.9%;
+}
+
 #info img:hover{
   cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
 }
@@ -192,6 +198,33 @@ a:hover{
 
 a:active{
   text-decoration: line-through;
+}
+
+/* IMAGEN CD */
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* transition: opacity 0.1s ease-in-out; */
+}
+
+.image-container img.second-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.image-container:hover img.first-image {
+  opacity: 0;
+}
+
+.image-container:hover img.second-image {
+  opacity: 1;
 }
 
 /* LÍNEA ROJA */
@@ -326,11 +359,11 @@ html {
 
   #diseño{
     margin-top: 5%;
-    margin-left: 6%;
+    margin-left: 4%;
   }
 
   #diseño img{
-    margin-top: 5%;
+    /* margin-top: 3%; */
     margin-right: 6%;
   }
 
@@ -379,8 +412,31 @@ html {
     margin-top: 0%;
   }
 
-  .imagen-responsiva {
+  .xenia{
+    clip-path: inset(14% 16% 14% 16%);
+  }
+
+  #cartel{
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+
+  #cartel3{
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+
+  .imagen-responsiva{
     content: url('images/music/poster_anim2.gif');
+  }
+
+  .imagen-responsiva2{
+    width: 200px;
+    content: url('images/design/tfg/Mesa\ de\ trabajo\ 1\ copia\ 5-2.jpg');
+  }
+
+  .imagen-responsiva3{
+    content: url('images/design/tfg/Mesa\ de\ trabajo\ 1\ copia\ 7-2.jpg');
   }
 
   .linea-roja {
@@ -388,6 +444,11 @@ html {
     height: 2px; /* Grosor de la línea */
     background-color: red; /* Color de la línea */
     margin: 0 auto; /* Ajusta los márgenes si es necesario */
+  }
+
+  iframe{
+    width: 100%;
+    height: 350px;
   }
 
   .back-to-top{
