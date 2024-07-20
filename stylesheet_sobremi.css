@@ -189,13 +189,13 @@ h2, h3{
     position: relative;
 }
 .line-60 {
-    width: 50%;
+    width: 55%;
 }
 .line-40 {
     width: 70%;
 }
 .line-100 {
-    width: 40%;
+    width: 45%;
 }
 
 
@@ -314,9 +314,9 @@ footer{
   left: 95%; /* Distancia desde la derecha */
   width: 50px; /* Ancho de la imagen */
   height: 50px; /* Altura de la imagen */
-  cursor: pointer; /* Cambia el cursor a un puntero */
+  cursor: url(images/circle-cursor-hover.png), auto;
   z-index: 1000; /* Asegura que la flecha esté sobre otros elementos */
-  transition: opacity 0.5s; /* Transición de opacidad */
+  /* transition: opacity 0.5s; Transición de opacidad */
   display: block;
   margin-top: -4.3%;
 }
@@ -329,10 +329,6 @@ body.scrolled .back-to-top {
 /* Para hacer el scroll suave */
 html {
     scroll-behavior: smooth; /* Desplazamiento suave */
-}
-
-.back-to-top:hover {
-    opacity: 0.6; /* Cambia la opacidad al pasar el cursor sobre la imagen */
 }
 
 /* CAMBIO IDIOMA */
