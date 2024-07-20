@@ -85,7 +85,6 @@
     width: 22%;
     left: 75%;
     top: 48%;
-
   }
 
   #info{
@@ -416,6 +415,7 @@ html[lang="es"] [data-lang="es"] {
     }
   
     #main {
+      width: 90%;
       background-color: #ffffff;
       flex-direction: column; /* Cambia a column para versiones móviles */
     }
@@ -428,10 +428,10 @@ html[lang="es"] [data-lang="es"] {
       border-left: 0px solid #ffffff;
     }
   
-    #main img{
+    #main img >#yop{
       /* width: 100%; */
       height: auto;
-      margin-left: 7%;
+      margin-left: 10%;
     }
 
     #info{
@@ -440,7 +440,7 @@ html[lang="es"] [data-lang="es"] {
       margin-bottom: 2%;
       font-size: 90%;
       /* margin-top: 1%; */
-      margin-left: 4%;
+      margin-left: 7%;
     }
 
     #infoart{
@@ -452,26 +452,34 @@ html[lang="es"] [data-lang="es"] {
     }
 
     p{
-      background-color: antiquewhite;
+      /* background-color: antiquewhite; */
       margin-top: 5pt;
       margin-right: 10%;
-      margin-left: 7%;
+      margin-left: 10%;
       margin-bottom: 10pt;
       text-align: justify;
     }
 
     #sobremi p, h2{
-      background-color: antiquewhite;
+      /* background-color: antiquewhite; */
       margin-top: 5pt;
       margin-right: 10%;
-      margin-left: 7%;
+      margin-left: 10%;
       margin-bottom: 10pt;
       text-align: justify;
     }
 
     #sobremi{
+      width: 90%;
       margin-top: 3%;
       margin-left: 0;
+    }
+
+    #yop{
+      position: relative;
+      width: 40%;
+      left: 10%;
+      margin-top: 2%;
     }
 
     #infoart img{
@@ -520,6 +528,11 @@ html[lang="es"] [data-lang="es"] {
       top: 64%;
       left: -2%;
       mix-blend-mode: multiply;
+    }
+
+    .datos{
+      width: 120%;
+      margin-left: 10%;
     }
   
     .back-to-top{
