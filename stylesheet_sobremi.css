@@ -298,13 +298,21 @@ footer{
   /* width: 100%; */
   height: 60px;
   padding: 0 30px;
-  margin-top: 2%;
+  margin-top: 1%;
   bottom:  0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 2px solid #ff0000;
+  border-top: 2px solid #000000;
   clear: both; /* Asegura que ningún contenido flote a su alrededor */
+}
+
+.span1{
+text-align: center;
+}
+
+.span2{
+text-align: right;
 }
   
   
@@ -554,6 +562,31 @@ html[lang="es"] [data-lang="es"] {
   
     .back-to-top{
       display: none;
+    }
+
+    footer{
+      height: 140px;
+      padding: 30px 30px;
+      margin-top: 1%;
+      bottom:  0;
+      font-size: 20pt;
+      margin-bottom: 180px;
+      text-align: left;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      border-top: 2px solid #000000;
+      clear: both; /* Asegura que ningún contenido flote a su alrededor */
+    }
+    
+    .span1{
+      text-align: left;
+      margin-bottom: 5%;
+    }
+    
+    .span2{
+      text-align: left;
     }
   }
   

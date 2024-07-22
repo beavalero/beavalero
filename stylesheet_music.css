@@ -588,8 +588,9 @@ footer{
   height: 140px;
   padding: 30px 30px;
   margin-top: 1%;
+  margin-bottom: 5%;
   bottom:  0;
-  font-size: 18pt;
+  font-size: 20pt;
   text-align: left;
   display: flex;
   justify-content: flex-start;
