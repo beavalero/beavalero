@@ -363,7 +363,7 @@ html {
 
   /* RESPONSIVE */
 
-@media(max-width:828px){
+@media(max-width:1200px){
   /* HEADER */
   header{
     background-color: white;
