@@ -9,7 +9,7 @@
   /* HEADER */
   header{
       background-color: white;
-      height: 40px;
+      height: 70px;
       padding: 0 30px;
       position: sticky;
       top: 0;
@@ -23,7 +23,7 @@
   #home{
     text-transform: uppercase;
     color: #ff0000;
-    font-size: 14pt;
+    font-size: 18pt;
     text-decoration: none;
   }
   
@@ -383,7 +383,7 @@ html[lang="es"] [data-lang="es"] {
       background-color: white;
       height: 80px;
       padding: 0 30px;
-      font-size: 130%;
+      font-size: 24pt;
       position: sticky;
       top: 0;
       display: flex;
@@ -396,7 +396,7 @@ html[lang="es"] [data-lang="es"] {
     .mostrar-menu,
     .esconder-menu{
       display: block;
-      font-size: 50px;
+      /* font-size: 28pt; */
     }
   
     .menu{
@@ -410,6 +410,10 @@ html[lang="es"] [data-lang="es"] {
       padding: 100px 0px;
       z-index: 100;
       transition: 0.5s;
+    }
+
+    label{
+      font-size: 50pt;
     }
   
     .menu a{
@@ -430,6 +434,7 @@ html[lang="es"] [data-lang="es"] {
   
     body{
       background-color: #ffffff;
+      font-size: 16pt;
     }
   
     #main {
@@ -457,14 +462,18 @@ html[lang="es"] [data-lang="es"] {
       width: 110%;
       margin-top: 5%;
       margin-bottom: 2%;
-      font-size: 90%;
+      font-size: 16pt;
       /* margin-top: 1%; */
       margin-left: 7%;
     }
 
+    h1{
+      font-size: 24pt;
+    }
+
     #infoart{
       width: 90%;
-      font-size: 110%;
+      font-size: 16pt;
       /* margin-top: 1%; */
       margin-left: 3%;
       position: relative;
