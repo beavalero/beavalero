@@ -360,6 +360,39 @@ html {
    cursor: url(images/circle-cursor-hover.png), auto; /* Cursor sobre los enlaces */
 }
 
+/* CAMBIO IDIOMA */
+
+/* styles.css */
+[data-lang] {
+  display: none;
+}
+
+html[lang="en"] [data-lang="en"],
+html[lang="es"] [data-lang="es"] {
+  display: block;
+}
+
+.lang-btn {
+  padding: 0px 4px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: url(images/circle-cursor-hover.png), auto;
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.lang-btn.active {
+  border-bottom: 2px solid #ff0000;
+  color: #ff0000;
+}
+
+.lang-btn:hover {
+  color: #ff0000;
+}
+
 
   /* RESPONSIVE */
 
@@ -369,7 +402,7 @@ html {
     background-color: white;
     height: 80px;
     padding: 0 30px;
-    font-size: 130%;
+    font-size: 24pt;
     position: sticky;
     top: 0;
     display: flex;
@@ -382,7 +415,7 @@ html {
   .mostrar-menu,
   .esconder-menu{
     display: block;
-    font-size: 50px;
+    /* font-size: 50px; */
   }
 
   .menu{
@@ -396,6 +429,10 @@ html {
     padding: 100px 0px;
     z-index: 100;
     transition: 0.5s;
+  }
+
+  label{
+    font-size: 50pt;
   }
 
   .menu a{
@@ -412,6 +449,11 @@ html {
   #check:checked ~ .menu{
     right: 0;
   }
+
+  .lang-btn {
+    font-size: 24pt;
+  }
+
   /* MAIN */
 
   body{

@@ -9,7 +9,7 @@
   /* HEADER */
   header{
       background-color: white;
-      height: 70px;
+      height: 40px;
       padding: 0 30px;
       position: sticky;
       top: 0;
@@ -116,7 +116,7 @@
   #infoart{
     /* background-color: rgb(244, 180, 180); */
     width: 20%;
-    height: 60%;
+    height: 70%;
     padding: 30px;
     position: sticky;
     top: 0;
@@ -202,7 +202,7 @@ h2, h3{
 .infanta{
   width: 40%;
   position: absolute;
-  top: -4%;
+  top: -1%;
   left: 18%;
 }
 
@@ -430,6 +430,11 @@ html[lang="es"] [data-lang="es"] {
     #check:checked ~ .menu{
       right: 0;
     }
+
+    .lang-btn {
+      font-size: 24pt;
+    }
+    
     /* MAIN */
   
     body{
