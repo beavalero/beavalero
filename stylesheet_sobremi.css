@@ -377,7 +377,7 @@ html[lang="es"] [data-lang="es"] {
   
     /* RESPONSIVE */
 
-  @media(max-width:1128px){
+  @media(max-width:828px){
     /* HEADER */
     header{
       background-color: white;
@@ -474,8 +474,8 @@ html[lang="es"] [data-lang="es"] {
       /* background-color: antiquewhite; */
       margin-top: 5pt;
       margin-right: 10%;
-      margin-left: 10%;
-      margin-bottom: 10pt;
+      /* margin-left: 10%; */
+      margin-bottom: 50pt;
       text-align: justify;
     }
 
@@ -569,8 +569,8 @@ html[lang="es"] [data-lang="es"] {
       padding: 30px 30px;
       margin-top: 1%;
       bottom:  0;
-      font-size: 20pt;
-      margin-bottom: 180px;
+      font-size: 23pt;
+      margin-bottom: 220px;
       text-align: left;
       display: flex;
       justify-content: flex-start;
@@ -580,6 +580,11 @@ html[lang="es"] [data-lang="es"] {
       clear: both; /* Asegura que ningún contenido flote a su alrededor */
     }
     
+    .span0{
+      text-align: left;
+      margin-bottom: 5%;
+    }
+    
     .span1{
       text-align: left;
       margin-bottom: 5%;
@@ -587,6 +592,7 @@ html[lang="es"] [data-lang="es"] {
     
     .span2{
       text-align: left;
+      margin-bottom: 5%;
     }
   }
   
