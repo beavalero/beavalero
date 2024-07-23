@@ -502,7 +502,7 @@ html[lang="es"] [data-lang="es"] {
 
   #diseño img{
     /* margin-top: 3%; */
-    margin-right: 6%;
+    /* margin-right: 6%; */
     cursor: url(images/circle-cursor.png), auto;
   }
 
@@ -589,7 +589,7 @@ html[lang="es"] [data-lang="es"] {
   }
 
   .imagen-responsiva2{
-    width: 200px;
+    /* width: 200px; */
     content: url('images/design/tfg/Mesa\ de\ trabajo\ 1\ copia\ 5-2.jpg');
   }
 
