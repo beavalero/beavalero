@@ -97,6 +97,13 @@ body{
     z-index: 900; /* Asegura que el div sticky esté por debajo del header */
 }
 
+h3{
+  margin-top: 5pt;
+  font-family: Helvetica Neue Italic;
+  font-size: 10pt;
+  opacity: 40%;
+}
+
 .cursiva{
   font-family: Helvetica Neue Italic;
 }
@@ -218,6 +225,16 @@ li{
 
 li img{
   margin-right: 3%;
+}
+
+summary{
+  text-decoration: underline;
+}
+
+summary:hover{
+  color: #ff0000;
+  text-decoration: none;
+  cursor: url(images/circle-cursor-hover.png), auto;
 }
 
 /* IMAGEN CD */
